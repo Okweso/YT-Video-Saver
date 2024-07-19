@@ -6,8 +6,12 @@ This is a YouTube video saver web app. Using this web app involves copying the v
 
 The application is fully responsive. It can be used in mobile phones, tablets, and desktop devices.
 
-Tech Stack
+**Tech Stack**
 
 Backend: Django
 
 Frontend: HTML, CSS, and Bootstrap.
+
+**Contribution**
+
+Any contributions to this project will be appreciated.
