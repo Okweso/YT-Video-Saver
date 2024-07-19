@@ -1,0 +1,40 @@
+{% extends "myApp/Layout.html" %}
+{% block title %}
+OYT Video Saver
+{% endblock %}
+{% block content %}
+        
+        <div id="body_part">
+        <h2> OYT VIDEO SAVER</h2>
+        <b><p id="description">Save your favorite Youtube Videos here for free</p></b>
+        {% load widget_tweaks %}
+        <form method="post" action="">
+            {% csrf_token %}
+            <input type="text" id="inpt" name="given_url" value="{{url}}" placeholder="enter the video url...">
+            
+            <button type="submit" id="btn" name="fetch-vid" value="fetch-vid">Continue</button>
+            <br>
+            <h3>{{ vidTitle }}</h3>
+            <div id="thumbnail"><img src="{{vidThumbnail}}" alt="The video thumbnail goes here"></div>
+            <br>
+            <div id="frame">
+               
+                {% for x in stream %}
+                    {{ x.resolution }} <button type="submit" id="but" name="download-vid" value="1">Download</button>
+                {% endfor %}
+            </div>
+            <p id="size">
+               {{ filesize }}
+            </p>
+
+
+            <div id="progress-bar" style="display: block;">
+                <div id="progress" style="width: 0%;"></div>
+            </div>
+        
+            
+
+        </form>
+        </div>
+       
+{% endblock %}

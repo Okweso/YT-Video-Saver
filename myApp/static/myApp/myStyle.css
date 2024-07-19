@@ -1,0 +1,156 @@
+body{
+    align-items: center; 
+    text-align: center; 
+    height: fit-content; 
+    
+    color: rgb(217, 255, 0);
+    font-size: 40px;
+}
+#body_part{
+    border: 3px solid green;
+}
+#description{
+    color: deeppink;
+    font-size: 30px;
+}
+#inpt{
+    width: 480px;
+    height: 40px;
+    font-size: large;
+    border-style:inset;
+    border-radius: 50px;
+    border-color: rgb(0, 100, 62);
+    padding: 5px;
+}
+#inpt:hover{
+    width: 520px;
+}
+#btn{
+    background-color: blueviolet;
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    cursor:grabbing;
+    font-size: large;
+}
+#btn:hover{
+    background-color: chartreuse;
+    width: 130px;
+    font-size: large;
+}
+img{
+    width: 450px;
+    height: 260px;
+}
+#size{
+    color: green;
+}
+
+#frame{
+    color: black;
+
+}
+#but{
+    background-color: bisque;
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    cursor: grab;
+    font-size: large;
+}
+#but:hover{
+    background-color: chartreuse;
+}
+#footer{
+    color: black;
+    font-size: 15px;
+    background-color:darkgray;
+    padding: 10px;
+}
+
+
+@media screen and (max-width:480px){
+    body{
+        font-size: 25px;
+    }
+    #inpt{
+        width: 250px;
+        height: 30px;
+        font-size:medium;
+    }
+    #description{
+        font-size: 17px;
+    }
+    #inpt::after{
+        content: "\a";
+        white-space: pre;
+        display: block;
+    }
+    #btn::after{
+        content: "\a";
+        white-space: pre;
+    }
+    img{
+        width: 300px;
+        height: 170px;
+        
+    }
+    #inpt:hover{
+        width: 270px;
+    }
+    h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1024px) and (orientation:portrait) {
+    body{
+        font-size: 33px;
+    }
+    #inpt{
+        width: 330px;
+        height: 38px;
+        font-size:medium;
+    }
+    #description{
+        font-size: 22px;
+    }
+    img{
+        width: 390px;
+        height: 220px;
+        
+    }
+    #inpt:hover{
+        width: 350px;
+    }
+    h3{
+        font-size: 27px;
+    }
+    
+}
+
+@media screen and (max-width:1024) and (orientation:landscape){
+    body{
+        font-size: 40px;
+    }
+    #inpt{
+        width: 480px;
+        height: 40px;
+        font-size:medium;
+    }
+    #description{
+        font-size: 30px;
+    }
+img{
+    width: 450px;
+    height: 260px;
+    
+}
+#inpt:hover{
+    width: 520px;
+}
+h3{
+    font-size: 27px;
+}
+
+}
